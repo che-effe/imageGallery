@@ -1,0 +1,104 @@
+body{
+ background-color: black;
+}
+
+.background-image {
+  background-image: url('../images/backgrounds/sunsetBG.jpg');
+  background-size: cover;
+  display: block;
+  filter: blur(40px);
+  -webkit-filter: blur(40px);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+.transitioning {
+  opacity: 0 !important;
+  top:-200px !important;
+  transition: 0.1s ease-out !important;
+}
+.main-window img {
+  width:100%;
+  height: auto;
+  opacity: 1;
+  transition: 0.2s ease-in
+}
+
+.thumbnails {
+  position: absolute;
+  bottom: 28px;
+  height:auto;
+  width:100%;
+  padding: 20px;
+}
+
+.thumb-container {
+  margin:0 auto;
+}
+
+.pile {
+  height: 100px;
+  position: absolute;
+  bottom: 28px;
+  margin: auto;
+  transition: height 0.2s;
+  list-style-type: none;
+}
+
+.pile:hover{
+  height:120px;
+}
+
+.pile.left{
+  left: 20;
+}
+
+.pile.middle{
+  left: 220px;
+}
+
+.pile.right{
+  left: 420px;
+}
+
+
+.pile img {
+  border: 7px solid white;
+  height: 100px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.pile img:hover {
+  height:120px;
+}
+
+.pile li{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s cubic-bezier(.25,.92,.44,1);
+}
+
+.pile li:first-child {
+  transform: rotate(-5deg);
+}
+
+.pile:hover li:first-child {
+  top: -220px;
+  left:-5px;
+  transform: rotate(-15deg);
+}
+
+.pile li:nth-child(2) {
+   transform: rotate(3deg);
+}
+
+.pile:hover li:nth-child(2) {
+  top: -120px;
+  left:-5px;
+   transform: rotate(10deg);
+}
