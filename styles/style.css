@@ -29,10 +29,15 @@ body{
 
 .thumbnails {
   position: absolute;
-  bottom: 28px;
-  height:auto;
-  width:100%;
+  bottom: -150px;
+  height: auto;
+  width: 100%;
   padding: 20px;
+  transition: bottom 0.5s ease-in-out;
+}
+
+.thumbnails.shown {
+  bottom:28px;
 }
 
 .thumb-container {
