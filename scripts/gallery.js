@@ -1,4 +1,4 @@
-// Set up our variables for out DOM objects that our JS will need reference to.
+// Set up our variables for our DOM objects that our JS will need reference to.
 
 // our main selected image containers
 var mainWindow = document.getElementById('mainWindow');
@@ -6,7 +6,7 @@ var mainWindow = document.getElementById('mainWindow');
 // our thumbnail container
 var thumbContainer = document.getElementById('thumbContainer');
 
-// a valur for time since last detected mousemovement.
+// a value for time since last detected mousemovement.
 var idletime = 0;
 
 /*Add an event listener for mouse movement that will reset idleTime
